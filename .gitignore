@@ -1,0 +1,25 @@
+# SAP B1 SQL Library - Git Ignore
+
+# Temporary SQL files
+*.tmp
+*.bak
+*~
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Personal notes (if any)
+notes.txt
+scratch.sql
+test.txt
