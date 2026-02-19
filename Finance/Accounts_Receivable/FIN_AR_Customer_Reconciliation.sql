@@ -1,6 +1,8 @@
--- Customer Reconciliation Statement (AKT Sverka)
--- Description: Customer account statement with running balance by currency
+-- FIN_AR_Customer_Reconciliation.sql
+-- Description: Customer reconciliation statement (Акт сверки) — journal transactions
+--              with running balance split by currency (USD / UZS)
 -- Parameters: [%0] Customer Name (LIKE filter), [%1] Start Date, [%2] End Date
+-- Tables: JDT1 (Journal Entry Lines), OCRD (Business Partners)
 
 SELECT 
     T0."RefDate"                        AS "Дата регистрации",

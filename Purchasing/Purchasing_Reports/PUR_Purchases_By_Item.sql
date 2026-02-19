@@ -1,6 +1,7 @@
--- Purchases Report
--- Description: Lists all purchase documents with items and quantities
+-- PUR_Purchases_By_Item.sql
+-- Description: Purchase quantities by item from AP Invoices, grouped by date
 -- Parameters: [%0] Start Date, [%1] End Date
+-- Tables: OPCH (AP Invoice), PCH1 (AP Invoice Lines)
 
 SELECT
     T0."DocEntry",

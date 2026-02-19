@@ -11,8 +11,14 @@ SQL queries for warehouse operations, locations, and space management.
 - Warehouse efficiency metrics
 - Multi-warehouse inventory
 
-## Example File Names
-- `INV_WH_Stock_By_Warehouse.sql`
+## Available Queries
+
+### `INV_Stock_By_Warehouse.sql`
+Current stock on-hand pivoted by warehouse (AND, CST, FG1, NMG, ProdWH, QNQ) with row totals.
+- Filters: item groups 100 and 101, only non-zero stock
+- Modify `WhsCode IN (...)` and `ItmsGrpCod IN (...)` to fit your setup
+
+## Future File Names
 - `INV_WH_Warehouse_Capacity_Report.sql`
 - `INV_WH_Bin_Location_Status.sql`
 - `INV_WH_Transfer_History.sql`

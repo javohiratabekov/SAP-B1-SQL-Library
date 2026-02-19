@@ -11,12 +11,18 @@ SQL queries for bank transactions, reconciliations, statements, and cash managem
 - Deposits in transit
 - Bank balance tracking
 
-## Example File Names
-- `FIN_BANK_Reconciliation_Report.sql`
-- `FIN_BANK_Outstanding_Checks.sql`
-- `FIN_BANK_Cash_Flow_Daily.sql`
-- `FIN_BANK_Deposits_In_Transit.sql`
-- `FIN_BANK_Balance_By_Account.sql`
+## Available Queries
+
+### `FIN_BNK_Cash_Turnover.sql`
+Cash turnover report — incoming payments (ORCT) and outgoing payments (OVPM) combined via UNION ALL.
+- Parameters: `[%0]` Start Date, `[%1]` End Date
+
+## Future File Names
+- `FIN_BNK_Reconciliation_Report.sql`
+- `FIN_BNK_Outstanding_Checks.sql`
+- `FIN_BNK_Cash_Flow_Daily.sql`
+- `FIN_BNK_Deposits_In_Transit.sql`
+- `FIN_BNK_Balance_By_Account.sql`
 
 ## SAP B1 Tables
 Common tables used:

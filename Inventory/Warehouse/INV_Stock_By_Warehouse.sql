@@ -1,7 +1,8 @@
--- Inventory by Warehouse
--- Description: Shows inventory quantities grouped by warehouse with totals
--- Warehouses: AND, CST, FG1, NMG, ProdWH, QNQ
--- Item Groups: 100, 101
+-- INV_Stock_By_Warehouse.sql
+-- Description: Current stock quantities pivoted by warehouse with row totals
+-- Warehouses: AND, CST, FG1, NMG, ProdWH, QNQ (modify IN clause to add/change warehouses)
+-- Item Groups: 100, 101 (modify ItmsGrpCod filter as needed)
+-- Tables: OITM (Items), OITB (Item Groups), OITW (Item Warehouse)
 
 SELECT 
     T0."ItemCode" AS "Код товара",

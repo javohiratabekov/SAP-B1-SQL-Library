@@ -11,7 +11,15 @@ SQL queries for inventory valuation, costing methods, and financial inventory re
 - Cost layer analysis
 - Inventory financial impact
 
-## Example File Names
+## Available Queries
+
+### `INV_Valuation_FIFO_Stock_Cost.sql`
+Current FIFO stock valuation showing on-hand quantities with unit cost and total value in both USD and UZS.
+- Filters: FIFO items only (`EvalSystem = 'F'`), stocked items, positive balances
+- Cost priority: `OITW.StockValue` → `OITM.AvgPrice` → `OITM.LastPurPrc`
+- UZS rate sourced from latest entry in `ORTT`
+
+## Future File Names
 - `INV_VAL_Current_Inventory_Value.sql`
 - `INV_VAL_Slow_Moving_Inventory.sql`
 - `INV_VAL_Obsolete_Stock_Report.sql`

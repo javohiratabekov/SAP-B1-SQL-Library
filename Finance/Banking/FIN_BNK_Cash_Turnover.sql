@@ -1,6 +1,7 @@
--- Cash Turnover Report
--- Description: Shows all incoming and outgoing cash payments
+-- FIN_BNK_Cash_Turnover.sql
+-- Description: Cash turnover report — incoming (ORCT) and outgoing (OVPM) cash payments
 -- Parameters: [%0] Start Date, [%1] End Date
+-- Tables: ORCT (Incoming Payments), OVPM (Outgoing Payments)
 
 SELECT
     'Приход' AS "Тип операции",

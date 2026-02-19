@@ -11,7 +11,13 @@ Comprehensive sales reporting, analysis, and KPI tracking queries.
 - Commission calculations
 - Sales pipeline reports
 
-## Example File Names
+## Available Queries
+
+### `SAL_Sales_By_Item.sql`
+Sales quantities from A/R Invoices grouped by date and item.
+- Parameters: `[%0]` Start Date, `[%1]` End Date
+
+## Future File Names
 - `SAL_RPT_Monthly_Sales_Summary.sql`
 - `SAL_RPT_Sales_By_Customer.sql`
 - `SAL_RPT_Sales_By_Item_Group.sql`
