@@ -136,6 +136,17 @@ All SQL files follow: **`MODULE_SubModule_Description.sql`**
 2. Review the `README.md` in each folder for available queries and table references
 3. Open the `.sql` file and use it in SAP B1 Query Manager or Crystal Reports
 
+## Generate New Queries (Recommended Workflow)
+If you want consistent, production-quality SAP B1 HANA SQL generation:
+
+1. Fill `templates/NEW_QUERY_REQUEST_TEMPLATE.md`
+2. Follow `QUERY_GENERATION_WORKFLOW.md`
+3. Build from `templates/SAP_B1_HANA_QUERY_TEMPLATE.sql`
+4. Save to the correct module folder using this repo naming convention
+5. Update that module's `README.md` with query description and parameters
+
+This process makes AI-generated and manually written SQL more consistent, testable, and reusable.
+
 ## Notes
 - All queries are written for **SAP HANA SQL**
 - Parameter syntax: `[%0]`, `[%1]`, `[%2]` (SAP B1 Query Manager format)

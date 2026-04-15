@@ -16,6 +16,14 @@ Same report using correlated subqueries. Hardcoded for BabyBoo UltraSoft items.
 Use this as reference; prefer the CTE version for performance.
 - Parameters: `[%1]` Start Date, `[%2]` End Date, `[%3]` Warehouse Code
 
+### 3. `INV_RPT_Stock_Aging_By_Warehouse.sql`
+Slow-moving stock aging by warehouse using last inventory movement date:
+- Returns only items with current stock (`OnHand > 0`)
+- Calculates days stayed in warehouse as of selected date
+- Classifies stock into configurable aging periods
+- Parameters:
+  - `[%0]` Warehouse Code filter (`%` for all warehouses)
+
 ## Query Types
 - Inventory movement tracking
 - Opening / closing balance analysis
